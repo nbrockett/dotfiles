@@ -1,0 +1,1 @@
+alias dusort='du -a -d 1 -h | sort -h'

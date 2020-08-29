@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # source ~/Scripts/ls_after_cd.sh
 # source ~/Scripts/aliases.sh
 
-config_files=(~/.zsh/*.sh(N))
+config_files=(~/.zsh/*.zsh(N))
 for file in ${config_files}
 do
   source $file

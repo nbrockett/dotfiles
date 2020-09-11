@@ -66,6 +66,9 @@ ZSH_THEME="agnoster"
 # Executable Path for VScode plugin
 VSCODE=code-oss
 
+# Added export for remote ssh
+# TODO: run this only after ssh command
+export TERM=vt100
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*

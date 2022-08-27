@@ -15,11 +15,28 @@ source ~/GitHub/powerlevel10k/powerlevel10k.zsh-theme
 # TODO: run this only after ssh command
 #export TERM=vt100
 
+# Execute zsh specific scripts
 config_files=(~/.zsh/*.zsh(N))
 for file in ${config_files}
 do
   source $file
 done
+
+# autocompletion
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+zstyle ':completion::complete:*' gain-privileges 1
+
+
+# control modifiers
+#key[Control-Left]="${terminfo[kLFT5]}"
+#key[Control-Right]="${terminfo[kRIT5]}"
+#
+#[[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
+#[[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
+
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
